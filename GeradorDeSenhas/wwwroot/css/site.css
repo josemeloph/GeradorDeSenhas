@@ -1,0 +1,102 @@
+﻿* {
+    padding: 0;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    font-family: "Roboto",sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
+
+    .container form {
+        height: 45%;
+        width: 35%;
+        min-height: 200px;
+        min-width: 305px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .container form > div {
+            width: 85%;
+        }
+
+.password {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+    .password > div {
+        display: flex;
+        align-items: flex-end;
+        height: 27px;
+        margin-right: 13px;
+        padding: 7px;
+        width: 60%;
+        background: white;
+        border: solid rgba(0,0,0,1) 1px;
+        border-radius: 5px;
+    }
+
+        .password > div input {
+            width: 100%;
+            font-size: 17px;
+            background-color: transparent;
+            border: none;
+        }
+
+            .password > div input:focus {
+                outline: none;
+            }
+
+    .password button {
+        font-family: "Roboto",sans-serif;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        font-weight: 800;
+        color: white;
+        background-color: #5c84cb;
+        width: 24%;
+        border: solid black 1px;
+        border-radius: 5px;
+        transition: 0.2s;
+    }
+
+        .password button:hover {
+            cursor: pointer;
+            background-color: #4e84e3;
+        }
+
+.checkbox {
+    padding: 5px;
+}
+
+    .checkbox > div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+        .checkbox > div input {
+            margin-right: 6px;
+            width: 17px;
+            height: 17px;
+        }
+
+    .checkbox .pwdLength input {
+        margin-right: 8px;
+        width: 10%;
+        height: 27px;
+        text-align: right;
+    }
+
+        .checkbox .pwdLength input:hover {
+            outline: none;
+        }

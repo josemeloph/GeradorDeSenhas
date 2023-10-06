@@ -1,0 +1,35 @@
+﻿@model Senha
+
+<form asp-action="GerarSenha" asp-controller="Home">
+   <div>
+       <span>Senha Gerada: </span>
+        <div class="password">
+            <div>
+                <input value="@Model.Valor" type="text"/>
+            </div>
+            <button type="submit">Gerar</button>
+        </div>
+        <div class="checkbox">
+            <div class="pwdLength">
+                <input asp-for="Tamanho" type="number" />
+                <label>Tamanho da senha</label>
+            </div>
+            <div>
+                <input asp-for="Maiusculas" type="checkbox" />
+                <label>Incluir Letras Maiúsculas</label>
+            </div>
+            <div>
+                <input asp-for="Minusculas" type="checkbox" />
+                <label>Incluir Letras Minúsculas</label>
+            </div>
+            <div>
+                <input asp-for="Numeros" type="checkbox" />
+                <label>Incluir Números</label>
+            </div>
+            <div>
+                <input asp-for="Especiais" type="checkbox" />
+                <label>Incluir Caracteres Especiais</label>
+            </div>
+        </div>
+   </div>
+</form>
